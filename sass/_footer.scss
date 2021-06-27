@@ -1,0 +1,78 @@
+.footer {
+   &__page {
+      background-color: rgb(34, 38, 54);
+   }
+
+   &__wrap {
+      display: grid;
+      grid-template: 1fr / repeat(4, 1fr);
+      justify-content: center;
+      gap: 50px;
+      @media (max-width: 992px) {
+         grid-template: repeat(2, 1fr) / repeat(2, 45%);
+         gap: 20px;
+      }
+      @media (max-width: 540px) {
+         grid-template: repeat(4, 1fr) / repeat(1, 80%);
+         gap: 0;
+      }
+   }
+
+   &__iteams {
+   }
+
+   &__name-section {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+      margin: 70px 0 40px 0;
+   }
+
+   &__info {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: $ColorTxt1;
+   }
+
+   &__social-wrap {
+      display: flex;
+      margin: 40px 0 0 0;
+   }
+
+   &__social-conteiner {
+      padding: 10px;
+      border-radius: 50%;
+      background-color: rgb(46, 50, 66);
+      margin: 0 10px 0 0;
+   }
+
+   &__social-conteiner svg {
+      width: 25px;
+      height: 25px;
+      fill: #fff;
+   }
+
+   &__link-wrap {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__navlink {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: rgb(93, 93, 93);
+      margin: 0 0 20px 0;
+      transition: 0.2s;
+   }
+
+   &__navlink:hover {
+      color: rgb(208, 207, 207);
+   }
+
+   &__marg {
+      margin: 0 0 0 30px;
+   }
+}
